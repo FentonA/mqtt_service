@@ -1,0 +1,10 @@
+[package]
+name = "mqtt_service"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rumqtt = {version = "0.31.0", features = ["chrono"]}
+sys-info = "0.9.1"
