@@ -48,4 +48,13 @@ impl<'a, 'b> MqttRequestExt for Request<'a, 'b> {
 }
 
 
-fn random() => String{}
+fn random() -> String{
+
+    use rand::{thread_rng, Rng};
+    use rand::distributions::Alphanumeric;
+
+    thread_rang()
+        .sample_iter(&Alphanumeric)
+        .take(5)
+        .collect()
+}
